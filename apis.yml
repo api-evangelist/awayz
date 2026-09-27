@@ -1,23 +1,78 @@
 aid: awayz
+
 name: AWAYZ
-description: 'AWAYZ is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://awayz.com/twitter-header.png
+
+description: "Awayz by Odynn is a mobile application that helps users maximize earnings from spending and travel for free through points and miles. Leveraging the proprietary CardArb™ algorithm, the platform aggregates credit card rewards, airline miles, and hotel points to suggest optimal spending strategies, enabling users to travel at reduced cost or even for free. The service targets frequent travelers and rewards‑focused consumers seeking to automate and optimize their loyalty program benefits."
+
 url: https://raw.githubusercontent.com/api-evangelist/awayz/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Travel
+- Fintech
+- Rewards
+- MobileApp
+- Loyalty
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/awayz-hosts.yml
+- type: Vendors
+  url: vendors/awayz-vendors.yml
+- type: DeveloperPortal
+  url: https://developer.awayz.com/
+- type: GettingStarted
+  url: https://developer.awayz.com/docs/internal/cap/local-setup
+- type: DomainSecurity
+  url: security/awayz-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://awayz.com
+- type: Documentation
+  url: https://awayz.com/docs
+- type: APIReference
+  url: https://awayz.com/api
+- type: Blog
+  url: https://awayz.com/blog
+- type: Pricing
+  url: https://awayz.com/pricing
+- type: TermsOfService
+  url: https://awayz.com/terms
+- type: PrivacyPolicy
+  url: https://awayz.com/privacy
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The developer portal and docs are served as JavaScript shells, preventing machine‑readable extraction.
+  evidence:
+    - url: https://awayz.com
+      status: 200
+  checked: 2026-09-27
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

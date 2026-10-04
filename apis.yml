@@ -21,7 +21,17 @@ created: '2026-09-27'
 
 modified: '2026-09-27'
 
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
+x-docs-hosting: aws-cloudfront
 tags:
+- Travel
+- Fintech
+- Rewards
+- Mobile App
+- Loyalty
+tags_raw:
 - Travel
 - Fintech
 - Rewards
